@@ -1,3 +1,4 @@
+import { Trash2 } from "lucide-react";
 
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
 
   return (
     <>
+      <Trash2/>
 
     </>
   )
