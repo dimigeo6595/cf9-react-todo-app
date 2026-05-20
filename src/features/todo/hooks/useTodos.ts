@@ -1,11 +1,11 @@
 import {useState} from "react";
 import type {Todo} from "../types.ts";
 
-const getInitialTodos = []
+// const getInitialTodos = []
 
 export const useTodos = () => {
 
-    const [todos, setTodos] = useState<Todo[]>(getInitialTodos)
+    const [todos, setTodos] = useState<Todo[]>([])
 
     const addTodo = (text: string) => {
         setTodos(prev => [
