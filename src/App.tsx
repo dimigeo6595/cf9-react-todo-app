@@ -1,4 +1,4 @@
-import { Trash2 } from "lucide-react";
+import Layout from "./shared/layout/Layout";
 
 
 function App() {
@@ -6,8 +6,9 @@ function App() {
 
   return (
     <>
-      <Trash2/>
-
+      <Layout>
+        <h1>Content</h1>
+      </Layout>
     </>
   )
 }
