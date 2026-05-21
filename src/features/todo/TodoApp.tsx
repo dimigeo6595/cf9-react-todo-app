@@ -31,12 +31,16 @@ const TodoApp = () => {
 
                 {
                     todos.length > 0 && (
-                        <Button
-                            addClasses="bg-cf-dark-red"
-                            label="Clear All"
-                            onClick={clearAllTodos}
 
-                        />
+                        <div className="text-end mt-4">
+                            <Button
+                                addClasses="bg-cf-dark-red"
+                                label="Clear All"
+                                onClick={clearAllTodos}
+
+                            />
+                        </div>
+
                     )
                 }
 

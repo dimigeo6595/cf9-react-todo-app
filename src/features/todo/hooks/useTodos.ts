@@ -24,7 +24,7 @@ export const useTodos = () => {
     }
 
     const deleteTodo = (id: number) => {
-        setTodos(prev => prev.filter((todo) => todo.id === id))
+        setTodos(prev => prev.filter((todo) => todo.id !== id))
     }
 
     const editTodo = (id: number, newText: string) => {

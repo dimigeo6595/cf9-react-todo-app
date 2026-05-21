@@ -35,7 +35,6 @@ const TodoList = ({
         <>
             <ul className="space-y-2">
                 {todos.map(todo => (
-                        <>
                             <li key={todo.id} className="flex items-center justify-between bg-gray-100 p-2 rounded">
                                 {editId === todo.id ? (
                                     <>
@@ -81,7 +80,6 @@ const TodoList = ({
                                     </>
                                 )}
                             </li>
-                        </>
                     )
                 )}
             </ul>
