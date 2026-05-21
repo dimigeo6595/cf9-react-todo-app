@@ -2,10 +2,11 @@ import TodoForm from "./TodoForm.tsx";
 import {useRef} from "react";
 import {useTodos} from "./hooks/useTodos.ts";
 import TodoList from "./TodoList.tsx";
+import TodoStats from "./TodoStats.tsx";
 
 const TodoApp = () => {
     const inputRef = useRef<HTMLInputElement>(null);
-    const { todos, addTodo, deleteTodo,editTodo, toggleTodo, clearAll } = useTodos();
+    const { todos, addTodo, deleteTodo,editTodo, toggleTodo, clearAllTodos } = useTodos();
 
     const handleAdd = (text: string) => {
         addTodo(text);
@@ -25,6 +26,7 @@ const TodoApp = () => {
                     onEdit={editTodo}
                     onDelete={deleteTodo}
                 />
+                <TodoStats todos={todos}/>
 
             </div>
         </>
